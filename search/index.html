@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameHub Search</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #11121a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.search-page {
+  width: 100%;
+  max-width: 620px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 34px;
+  color: #c4b5fd;
+  margin-bottom: 8px;
+}
+
+p { color: #a1a1b5; }
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #39364d;
+  border-radius: 14px;
+  background: #20212d;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 12px #7c3aed55;
+}
+
+button {
+  padding: 0 22px;
+  border: 0;
+  border-radius: 14px;
+  background: #7c3aed;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover { background: #6d28d9; }
+
+.note {
+  font-size: 12px;
+  margin-top: 18px;
+}
+</style>
+</head>
+<body>
+<main class="search-page">
+  <h1>⌕ GameHub Search</h1>
+  <p>The web, one search away.</p>
+
+  <form class="search-form"
+        action="https://www.google.com/search"
+        method="get"
+        target="_blank">
+    <input
+      type="search"
+      name="q"
+      placeholder="Search anything..."
+      aria-label="Search the web"
+      required>
+    <button type="submit">🔎</button>
+  </form>
+
+  <p class="note">Powered by Google search</p>
+</main>
+</body>
+</html>
